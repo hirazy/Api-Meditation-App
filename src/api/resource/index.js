@@ -1,7 +1,7 @@
 import { Router } from 'express'
 import { middleware as query } from 'querymen'
 import { create, index, show, update, destroy } from './controller'
-import { password, master } from '../../services/passport'
+import { password, master, token } from '../../services/passport'
 import Resource, { schema } from './model'
 
 const router = new Router()
